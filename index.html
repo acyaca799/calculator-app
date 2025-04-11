@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Kalkulator Sederhana</h2>
+        <div class="input-group">
+            <input type="number" id="angka1" placeholder="Masukkan angka pertama">
+        </div>
+        <div class="input-group">
+            <select id="operator">
+                <option value="+">➕ Tambah</option>
+                <option value="-">➖ Kurang</option>
+                <option value="*">✖ Perkalian</option>
+                <option value="/">➗ Pembagian</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <input type="number" id="angka2" placeholder="Masukkan angka kedua">
+        </div>
+        <div class="button-group">
+            <button class="btn hitung" onclick="hitung()">Hitung</button>
+            <button class="btn bersih" onclick="bersihkan()">Bersih</button>
+        </div>
+        <p id="hasil" class="hasil-box">Hasil: <span id="nilai-hasil">-</span></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
